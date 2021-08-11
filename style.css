@@ -50,6 +50,8 @@ div {
 button {
     background-color: var(--button-background);
     text-decoration-color: var(--button-text);
+    text-align: center;
+    justify-content: center;
 }
 
 /* div.centered {
