@@ -20,10 +20,12 @@ body {
 
 p {
     text-align: center;
+    justify-content: center;
 }
 
 div {
     text-align: center;
+    justify-content: center;
 }
 
 #choice_div {
