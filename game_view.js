@@ -18,7 +18,7 @@ export let View = class {
         //might be issue here because I don't reset div anywhere
         let fact = document.createElement('div');
         let text = await this.model.getData(select);
-        fact.innerHTML= text;
+        fact.innerText= text;
         cell.append(fact);
         return cell;
     }
