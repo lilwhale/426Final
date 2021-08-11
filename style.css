@@ -30,16 +30,20 @@ div {
 
 #choice_div {
     display: flex;
+    text-align: center;
     justify-content: center;
 } 
 
 #fact_div {
     display: none;
+    text-align: center;
     justify-content: center;
     background-color: var(--fact);
 }
 
 #info_div {
+    text-align: center;
+    justify-content: center;
     background-color: var(--info);
 }
 
