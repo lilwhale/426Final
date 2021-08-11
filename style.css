@@ -54,7 +54,7 @@ button {
     justify-content: center;
 }
 
-/* div.centered {
+div.centered {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,8 +62,3 @@ button {
     font-weight: bold;
     color: var(--header);
 }
-
-.centered_content {
-    display: flex;
-    justify-content: space-evenly;
-} */
