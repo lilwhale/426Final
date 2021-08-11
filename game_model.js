@@ -14,11 +14,7 @@ export let Model = class {
     async getCocktail() {
         const result = await axios({
             method: 'get',
-            url: 'https://the-cocktail-db.p.rapidapi.com/search.php',
-            params: {
-                count: 1,
-                i: 'vodka'
-            },
+            url: 'https://the-cocktail-db.p.rapidapi.com/random.php',
             headers: {
             'x-rapidapi-key': '{x-rapidapi-key}',
             'x-rapidapi-host': 'the-cocktail-db.p.rapidapi.com'
