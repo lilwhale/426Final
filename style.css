@@ -18,6 +18,14 @@ body {
     background-color: var(--background);
 }
 
+p {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
 #choice_div {
     display: flex;
     justify-content: center;
