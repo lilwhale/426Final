@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Animal Match</title>
+
+        <!-- Include links to CSS stylesheets below -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <!-- Include links to JavaScript files below -->
+        <!-- <script src="node_modules/axios/dist/axios.js"></script> -->
+        <script type="module" src="game_model.js"></script>
+        <script type="module" src="game_view.js"></script>
+        <script type="module" src="game_script.js"></script>
+        <!--HEADER-->
+        <div>
+            <h1>API Time!</h1>
+        </div>
+        
+        <!--SELECT-->
+        <div>
+            <div id="choice_div" style="display: flex;">
+                <h2>Choose an API</h2>
+                <form>
+                    <p>Click on one below to see random information.</p>
+                    <div>
+                        <button id="cocktails_button">COCKTAILS</button>
+                    </div>
+                </form>
+            </div>
+            <!--FACT-->
+            <div id="fact_div"  style="display: none;">
+            <h2>Here's your info.</h2>
+            <form>
+                <div id="info_div">
+                    <button id="reset_button">RESET</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </body>
+</html>

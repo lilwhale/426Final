@@ -1,0 +1,53 @@
+:root {
+    --background: #767676;
+    --fact: #e68bf1;
+    --info: rgba(248, 250, 131, 0.993); 
+    --header: #4497eb;
+    --text: #eaeee5;
+    --button-text: #eedfdf;
+    --button-background: rgb(224, 163, 163);
+}
+
+h1, h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: var(--header);
+}
+
+body {
+    background-color: var(--background);
+}
+
+#choice_div {
+    display: flex;
+    justify-content: center;
+} 
+
+#fact_div {
+    display: none;
+    justify-content: center;
+    background-color: var(--fact);
+}
+
+#info_div {
+    background-color: var(--info);
+}
+
+button {
+    background-color: var(--button-background);
+    text-decoration-color: var(--button-text);
+}
+
+/* div.centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: var(--header);
+}
+
+.centered_content {
+    display: flex;
+    justify-content: space-evenly;
+} */
