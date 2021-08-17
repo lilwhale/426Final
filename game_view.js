@@ -19,7 +19,7 @@ export let View = class {
         var cell = document.getElementById("info_div");
         var fact = document.createElement('api_div');
         //
-        // Doing something wrong with the dispay of the API?
+        // Doing something wrong with the dispay of the API or get request?
         //
         fact = this.model.getData(select);
         cell.append(fact);
