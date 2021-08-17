@@ -47,6 +47,7 @@ div {
     background-color: var(--info);
 }
 
+/*how do i get buttons to be centered and below other div*/
 button {
     background-color: var(--button-background);
     text-decoration-color: var(--button-text);
