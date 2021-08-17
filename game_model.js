@@ -17,7 +17,8 @@ export let Model = class {
             method: 'get',
             url: 'https://thecatapi.com/v1/images/search',
             params: {
-                limit: 1
+                limit: 1,
+                size: "full"
             },
             headers: {
                 ['x-api-key']: '0c75101f-a8c7-47da-9073-624e3f6cc173'
