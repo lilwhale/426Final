@@ -14,10 +14,9 @@ export let Model = class {
     async getCocktail() {
         const result = await axios({
             method: 'get',
-            url: 'https://the-cocktail-db.p.rapidapi.com/random.php',
+            url: 'https://thecatapi.com/v1/images',
             headers: {
-            'x-rapidapi-key': '{x-rapidapi-key}',
-            'x-rapidapi-host': 'the-cocktail-db.p.rapidapi.com'
+            'api_key': '0c75101f-a8c7-47da-9073-624e3f6cc173',
             }
         })
         return result;
