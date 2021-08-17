@@ -21,8 +21,7 @@ export let View = class {
         //
         // Doing something wrong with the dispay of the API?
         //
-        var text = this.model.getData(select);
-        fact.innerText = text;
+        fact = this.model.getData(select);
         cell.append(fact);
         return cell;
     }
