@@ -10,9 +10,12 @@ export let Model = class {
             this.data = this.getCocktail();
         }
     }
-    // Cats atm to see if the api i was pulling was just bad
+    // Cats atm to see if the cocktail api i was pulling was just bad
     async getCocktail() {
         const result = await axios({
+            // for some reason when i inspect my deployed github page
+            // the inspection still has issues with the old api url that isnt in here
+            // i have push all my updates, but can't figure out that bug
             // still having issues with this. what exactly am i doing?
             method: 'get',
             url: 'https://thecatapi.com/v1/images',

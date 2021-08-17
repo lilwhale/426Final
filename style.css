@@ -52,6 +52,7 @@ button {
     text-decoration-color: var(--button-text);
     text-align: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 div.centered {
