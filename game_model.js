@@ -16,6 +16,12 @@ export let Model = class {
             // still having issues with this. what exactly am i doing?
             method: 'get',
             url: 'https://thecatapi.com/v1/images/search?limit=1',
+            params: {
+                action: 'query',
+                origin: '*',
+                format: 'json',
+                prop: 'extracts',
+            },
             headers: {
             'api_key': '0c75101f-a8c7-47da-9073-624e3f6cc173',
             }
