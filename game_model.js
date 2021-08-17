@@ -12,7 +12,6 @@ export let Model = class {
     }
     // Cats atm to see if the cocktail api i was pulling was just bad
     async getCocktail() {
-        axios.defaults.headers.common['x-api-key'] = "0c75101f-a8c7-47da-9073-624e3f6cc173" 
         const result = await axios({
             // still having issues with this. what exactly am i doing?
             method: 'get',
@@ -20,6 +19,9 @@ export let Model = class {
             params: {
                 limit: 1,
                 size: full
+            },
+            headers: {
+                ['x-api-key']: '0c75101f-a8c7-47da-9073-624e3f6cc173'
             }
         })
         return result.data[0];
