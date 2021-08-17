@@ -15,7 +15,7 @@ export let Model = class {
         const result = await axios({
             // still having issues with this. what exactly am i doing?
             method: 'get',
-            url: 'https://thecatapi.com/v1/images/search',
+            url: 'https://thecatapi.com/v1/images',
             params: {
                 limit: 1,
                 size: "full"
