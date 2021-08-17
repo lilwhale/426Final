@@ -21,8 +21,9 @@ export let View = class {
         //
         // Doing something wrong with the dispay of the API or get request?
         //
-        fact = this.model.getData(select);
-        cell.append(fact);
+        var fact = new Image(100, 200);
+        fact.src = this.model.getData(select);
+        cell.appendChild(fact);
         return cell;
     }
 }
