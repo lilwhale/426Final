@@ -7,7 +7,7 @@ export let View = class {
         document.getElementById("fact_div").style.display = "none";
         this.model.resetData();
         var cell = document.getElementById("api_div");
-        cell.remove();
+        cell.removeChild();
         document.getElementById("choice_div").style.display = "flex";
     }
     showDataView() {
