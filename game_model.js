@@ -10,9 +10,10 @@ export let Model = class {
             this.data = this.getCocktail();
         }
     }
-    // Cocktails
+    // Cats atm to see if the api i was pulling was just bad
     async getCocktail() {
         const result = await axios({
+            // still having issues with this. what exactly am i doing?
             method: 'get',
             url: 'https://thecatapi.com/v1/images',
             headers: {
