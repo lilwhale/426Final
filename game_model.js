@@ -7,7 +7,7 @@ export let Model = class {
     }
     async getData(choice){
         if (choice==1) {
-            this.data = await this.getCocktail();
+            this.data = this.getCocktail();
         }
     }
     // Cocktails

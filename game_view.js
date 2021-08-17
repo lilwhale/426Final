@@ -14,11 +14,11 @@ export let View = class {
         document.getElementById("fact_div").style.display = "flex";
     }
     insertFactClickHandler(select) {
-        let cell = document.getElementById("info_div");
+        var cell = document.getElementById("info_div");
         //might be issue here because I don't reset div anywhere
-        let fact = document.createElement('div');
-        let text = this.model.getData(select);
-        fact.innerText= text;
+        var fact = document.createElement('div');
+        var text = this.model.getData(select);
+        fact.innerText = text;
         cell.append(fact);
         return cell;
     }
