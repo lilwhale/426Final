@@ -17,14 +17,14 @@ export let View = class {
         document.getElementById("choice_div").style.display = "none";
         document.getElementById("fact_div").style.display = "flex";
     }
-    insertFactClickHandler(select) {
+    async insertFactClickHandler(select) {
         var cell = document.getElementById("info_div");
         var fact = document.createElement('api_div');
         //
         // Doing something wrong with the dispay of the API or get request?
         //
         var fact = new Image(100, 200);
-        fact.src = this.model.getData(select);
+        fact.src = await this.model.getData(select);
         cell.appendChild(fact);
         return cell;
     }
