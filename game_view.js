@@ -23,8 +23,11 @@ export let View = class {
         //
         // Doing something wrong with the dispay of the API or get request?
         //
-        var fact = new Image(100, 200);
-        fact.src = await this.model.getData(select);
+        var image = new Image();
+        var url = await this.model.getData(select);
+        print(url);
+        image.src = url; 
+        fact.appendChild(image);
         cell.appendChild(fact);
         return cell;
     }
