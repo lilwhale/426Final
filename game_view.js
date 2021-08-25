@@ -24,6 +24,7 @@ export let View = class {
         // Doing something wrong with the dispay of the API or get request?
         //
         var image = new Image();
+        print("ahh!");
         var url = await this.model.getData(select);
         print(url);
         image.src = url; 
