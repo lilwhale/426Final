@@ -68,6 +68,7 @@ export let Model = class {
                 limit: 1
             }
         })
-        return result.data.hits[0].webformatURL;
+        var number = Math.round(Math.random()*20);
+        return result.data.hits[number].webformatURL;
     }
 }
