@@ -9,7 +9,9 @@ export let View = class {
         var cell = document.getElementById("api_div");
         // is there something wrong with the Ids of the choicediv element? 
         // why does it disappear?
-        cell.removeChild();
+        if(cell) {
+            cell.remove();
+        }
         document.getElementById("choice_div").style.display = "flex";
     }
     showDataView() {
@@ -26,6 +28,8 @@ export let View = class {
         var image = new Image();
         console.log("ahh!");
         var url = await this.model.getData(select);
+        console.log("here");
+        console.log(this.model);
         console.log(url);
         image.src = url; 
         fact.appendChild(image);
