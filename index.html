@@ -19,24 +19,28 @@
         <script type="module" src="game_script.js"></script>
         <!--HEADER-->
         <div>
-            <h1>API Time!</h1>
+            <h1>Feline Good</h1>
         </div>
         
         <!--SELECT-->
         <div>
-            <h2>Choose an API</h2>
             <div id="choice_div" style="display: flex;">
-                <p>Click on one below to see random information.</p>
-                <div>    
-                    <button id="cocktail_button">CATS</button>
-                </div>
+                <p>Click on a button to explore the joys of API's.</p>
+            </div>
+            <div id="api_buttons" class="center" style="display:flex;">    
+                <button id="cat_button">CATS</button>
+                <button id="dog_button">DOGS</button>
+                <button id="face_button">UI FACES</button>
+                <button id="random_button">RANDOM</button>
             </div>
             <!--FACT-->
             <div id="fact_div"  style="display: none;">
-                <h2>Here's your info.</h2>
-                <div id="info_div"></div>
-                <div><button id="reset_button">RESET</button></div>
+                <h2>Here you go!</h2>
             </div>
+            <div id="info_div" style="display: none;">
+                <div id="api_div" style="width:500px;height:500px;overflow:hidden"></div>
+            </div> 
+            <div class="center"><button id="reset_button" style="display:none;">RESET</button></div>        
         </div>
     </body>
 </html>

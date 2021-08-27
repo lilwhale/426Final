@@ -47,6 +47,12 @@ div {
     background-color: var(--info);
 }
 
+#api_div {
+    text-align: center;
+    justify-content: center;
+    background-color: var(--info);
+}
+
 /*how do i get buttons to be centered and below other div*/
 button {
     background-color: var(--button-background);
@@ -65,3 +71,10 @@ div.centered {
     font-weight: bold;
     color: var(--header);
 }
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+  }

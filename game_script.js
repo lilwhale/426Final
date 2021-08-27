@@ -11,8 +11,23 @@ window.addEventListener("load", async () => {
     body.append(view.div);
 
     // API choice buttons.
-    document.getElementById("cocktail_button").addEventListener("click", () => {
+    document.getElementById("cat_button").addEventListener("click", () => {
         view.insertFactClickHandler(1);
+        view.showDataView();
+    });
+
+    document.getElementById("dog_button").addEventListener("click", () => {
+        view.insertFactClickHandler(2);
+        view.showDataView();
+    });
+
+    document.getElementById("face_button").addEventListener("click", () => {
+        view.insertFactClickHandler(3);
+        view.showDataView();
+    });
+
+    document.getElementById("random_button").addEventListener("click", () => {
+        view.insertFactClickHandler(4);
         view.showDataView();
     });
 
